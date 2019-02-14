@@ -29,6 +29,11 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
 
+    <style>
+    #special-card table tr td, #special-card table tr th{
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
 
@@ -146,7 +151,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="card">
+                            <div class="card" id="special-card">
                                 <div class="header">
                                     <h4 class="title">Liste de de platformes de déploiement</h4>
                                 </div>
@@ -156,22 +161,44 @@
                                             <th>ID</th>
                                             <th>Name</th>
                                             <th>Product Code Prefix</th>
+                                            <th>Nombre de produits</th>
+                                            <th>Avertissement dans les derniers 24h</th>
                                         </thead>
                                         <tbody>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Lespac</td>
                                                     <td>lespac</td>
+                                                    <td>420</td>
+                                                    <td><btn class="btn btn-sm btn-info btn-icon">0</btn></td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
                                                     <td>Lespac API</td>
                                                     <td>lespacapi</td>
+                                                    <td>320</td>
+                                                    <td><btn class="btn btn-sm btn-danger btn-icon">4</btn></td>
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
                                                     <td>Kijiji</td>
                                                     <td>kijiji</td>
+                                                    <td>420</td>
+                                                    <td><btn class="btn btn-sm btn-info btn-icon">0</btn></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Auto-Hebdo</td>
+                                                    <td>autohebdo</td>
+                                                    <td>420</td>
+                                                    <td><btn class="btn btn-sm btn-info btn-icon">0</btn></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Facebook</td>
+                                                    <td>facebook</td>
+                                                    <td>420</td>
+                                                    <td><btn class="btn btn-sm btn-info btn-icon">0</btn></td>
                                                 </tr>
                                             
                                         </tbody>
