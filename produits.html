@@ -29,6 +29,36 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
 
+
+    <style>
+            .btn-for-now {
+                border-radius: 3px;
+                background-color: white;
+                float: right;
+                border: 1px solid #68B3C8;
+                margin-right: 2px;
+            }
+    
+            .btn-for-now:hover {
+                background-color: #68B3C8;
+                float: right;
+                border: 1px solid #68B3C8
+            }
+    
+            .btn-for-now2 {
+                border-radius: 3px;
+                background-color: white;
+                float: right;
+                border: 1px solid #EB5E28;
+                margin-right: 2px;
+            }
+    
+            .btn-for-now2:hover {
+                background-color: #EB5E28;
+                float: right;
+                border: 1px solid #EB5E28
+            }
+        </style>
 </head>
 <body>
 
@@ -48,7 +78,7 @@
         </div>
 
         <ul class="nav">
-            <li class="active">
+            <li>
                 <a href="tableauDeBord.html">
                     <i class="ti-panel"></i>
                     <p>Tableau de bord</p>
@@ -57,10 +87,10 @@
             <li>
                 <a href="plateformes.html">
                     <i class="ti-map"></i>                     
-                    <p>Plateformes</p>
+                    <p>Plateformes de publication</p>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="produits.html">
                     <i class="ti-view-list-alt"></i>
                     <p>Produits</p>
@@ -104,7 +134,7 @@
                             <span class="icon-bar bar2"></span>
                             <span class="icon-bar bar3"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Table List</a>
+                        <a class="navbar-brand" href="#">Produits</a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -148,67 +178,113 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="header">
-                                    <h4 class="title">Produits</h4>
-                                    <p class="category">Liste des produits en inventaire</p>
+                                        <div style="float:right;">
+                                            <label>Concessionaire</label>
+                                            <br>
+                                            <select style="min-width: 200px">
+                                                <option>GC Quebec</option>
+                                                <option>WBA Montreal</option>
+                                                <option>GC Alma</option>
+                                                <option>Tous</option>
+                                            </select>
+                                        </div>
+                                    <h4 class="title">Liste des produits en inventaire</h4>
                                 </div>
                                 <div class="content table-responsive table-full-width">
                                     <table class="table table-striped">
                                         <thead>
-                                            <th>ID</th>
-                                            <th>Image</th>
-                                            <th>Titre</th>
-                                            <th>Concessionaire</th>
-                                            <th>Date</th>
-                                            <th>Prix</th>                                           
+                                            <th>ID
+                                            </th>
+                                            <th>Image
+                                                <i class="ti-arrows-vertical"></i>
+                                            </th>
+                                            <th>Titre
+                                                <i class="ti-arrows-vertical"></i>
+                                            </th>
+                                            <th>Concessionaire
+                                                <i class="ti-arrows-vertical"></i>
+                                            </th>
+                                            <th>Date
+                                                <i class="ti-arrows-vertical"></i>
+                                            </th>
+                                            <th>Prix
+                                                <i class="ti-arrows-vertical"></i>
+                                            </th>      
+                                            <th>Options
+                                            </th>                                           
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
                                                 <td><img src="./images/remorque/rem1.jpg" height="150" width="150" /></td>
                                                 <td>Remorque Galvanisé BIGWHEEL 63×120 SA ( 5 x 10 )</td>
-                                                <td>Groupe Carrier</td>
+                                                <td>GC Quebec</td>
                                                 <td>2019-02-22</td>
-                                                <td>2 500$</td>            
+                                                <td>2 500$</td>   
+                                                <td>
+                                                    <button style="float: left;" class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                    <button style="float: left;" class="btn-for-now2">Supprimer<i class="ti-trash"></i></button>
+                                                </td>         
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td><img src="./images/remorque/rem2.jpg" height="150" width="150" /></td>
                                                 <td>PROMO 5 x 8 x 6 Blanc TÔLES COLLÉES .30 Rabais 300$</td>
-                                                <td>Groupe Carrier</td>
+                                                <td>GC Quebec</td>
                                                 <td>2019-02-22</td>
-                                                <td>2 100$</td>            
+                                                <td>2 100$</td>
+                                                <td>
+                                                        <button style="float: left;" class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                        <button style="float: left;" class="btn-for-now2">Supprimer<i class="ti-trash"></i></button>
+                                                </td>            
                                             </tr>
                                             <tr>
                                                 <td>3</td>
                                                 <td><img src="./images/remorque/rem3.jpg" height="150" width="150" /></td>
                                                 <td>RPlateforme droite HD 7×20 ( 7 X 20 ) Essieux 7000 lbs</td>
-                                                <td>Groupe Carrier</td>
+                                                <td>GC Quebec</td>
                                                 <td>2019-02-22</td>
-                                                <td>1 850$</td>            
+                                                <td>1 850$</td>       
+                                                <td>
+                                                        <button style="float: left;" class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                        <button style="float: left;" class="btn-for-now2">Supprimer<i class="ti-trash"></i></button>
+                                                </td>     
                                             </tr>
                                             <tr>
                                                 <td>4</td>
                                                 <td><img src="./images/remorque/rem4.jpg" height="150" width="150" /></td>
                                                 <td>Remorque Galvanisée 8.5 x 20 avec Becquet+ lumières intégrées</td>
-                                                <td>Groupe Carrier</td>
+                                                <td>GC Quebec</td>
                                                 <td>2019-02-22</td>
-                                                <td>4 000$</td>            
+                                                <td>4 000$</td>   
+                                                <td>
+                                                        <button style="float: left;" class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                        <button style="float: left;" class="btn-for-now2">Supprimer<i class="ti-trash"></i></button>
+                                                </td>         
                                             </tr>
                                             <tr>
                                                 <td>5</td>
                                                 <td><img src="./images/remorque/rem5.jpg" height="150" width="150" /></td>
                                                 <td>Remorque utilitaire Galvanisé 72×144 SA ( 6 x 12)</td>
-                                                <td>Groupe Carrier</td>
+                                                <td>GC Quebec</td>
                                                 <td>2019-02-22</td>
-                                                <td>1 200$</td>            
+                                                <td>1 200$</td>     
+                                                <td>
+                                                        <button style="float: left;" class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                        <button style="float: left;" class="btn-for-now2">Supprimer<i class="ti-trash"></i></button>
+                                                </td>       
                                             </tr>
                                             <tr>
                                                 <td>6</td>
                                                 <td><img src="./images/remorque/rem6.jpg" height="150" width="150" /></td>
                                                 <td>Remorque Fermé Motoneiges 7X14 TA (7×14) Snowmobile</td>
-                                                <td>Groupe Carrier</td>
+                                                <td>GC Quebec</td>
                                                 <td>2019-02-22</td>
-                                                <td>2 300$</td>            
+                                                <td>2 300$</td>    
+                                                <td>
+                                                        <button style="float: left;" class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                        <button style="float: left;" class="btn-for-now2">Supprimer<i class="ti-trash"></i></button>
+                                                </td>        
                                             </tr>
 
                                         </tbody>
@@ -246,7 +322,7 @@
                         </ul>
                     </nav>
                     <div class="copyright pull-right">
-                        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
+                        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="">Mirageflow Inc</a>
                     </div>
                 </div>
             </footer>

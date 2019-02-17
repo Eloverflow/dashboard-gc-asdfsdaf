@@ -68,3 +68,17 @@
 .table-upgrade td:nth-child(3){
     text-align: center;
 }
+
+
+.sidebar-wrapper{
+	width: 300px!important;
+	overflow: hidden!important;
+}
+
+.sidebar {
+	width: 300px; 
+}
+
+.main-panel{
+	width: calc(100% - 300px)!important;
+}

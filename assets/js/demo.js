@@ -19,18 +19,17 @@ demo = {
     initChartist: function(){
 
         var dataSales = {
-          labels: ['9:00AM', '12:00AM', '3:00PM', '6:00PM', '9:00PM', '12:00PM', '3:00AM', '6:00AM'],
+          labels: ['1:00AM', '3:00AM', '5:00AM', '7:00AM', '9:00AM', '11:00AM', '1:00PM', '3:00PM', '5:00PM', '7:00PM', '9:00PM', '11:00PM'],
           series: [
-             [287, 385, 490, 562, 594, 626, 698, 895, 952],
-            [67, 152, 193, 240, 387, 435, 535, 642, 744],
-            [23, 113, 67, 108, 190, 239, 307, 410, 410]
+            [0, 0, 0, 15, 15, 15, 15, 15, 15, 15, 15, 15, 0],
+             [0, 0, 0, 15, 15, 15, 15, 15, 15, 15, 15, 15, 0]
           ]
         };
 
         var optionsSales = {
           lineSmooth: false,
           low: 0,
-          high: 1000,
+          high: 50,
           showArea: true,
           height: "245px",
           axisX: {
@@ -59,7 +58,7 @@ demo = {
         var data = {
           labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
           series: [
-            [5, 2, 1, 6, 4, 9, 2, 8, 4, 2, 9, 4]
+            [3, 1, 2, 1, 1, 2, 5, 2, 0, 0, 0, 1]
           ]
         };
 
@@ -68,7 +67,8 @@ demo = {
             axisX: {
                 showGrid: false
             },
-            height: "245px"
+            height: "245px",
+            lineSmooth: false
         };
 
         var responsiveOptions = [
@@ -216,6 +216,11 @@ demo = {
           low: 0,
           high: 1000,
           showArea: true,
+          
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+          ],
           height: "245px",
           axisX: {
             showGrid: false,

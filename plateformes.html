@@ -34,6 +34,33 @@
         text-align: center;
     }
     </style>
+    
+
+    <style>
+            .btn-for-now {
+                border-radius: 3px;
+                background-color: white;
+                border: 1px solid #68B3C8;
+                margin-right: 2px;
+            }
+    
+            .btn-for-now:hover {
+                background-color: #68B3C8;
+                border: 1px solid #68B3C8
+            }
+    
+            .btn-for-now2 {
+                border-radius: 3px;
+                background-color: white;
+                border: 1px solid #EB5E28;
+                margin-right: 2px;
+            }
+    
+            .btn-for-now2:hover {
+                background-color: #EB5E28;
+                border: 1px solid #EB5E28
+            }
+        </style>
 </head>
 <body>
 
@@ -53,16 +80,16 @@
         </div>
 
         <ul class="nav">
-            <li class="active">
+            <li>
                 <a href="tableauDeBord.html">
                     <i class="ti-panel"></i>
                     <p>Tableau de bord</p>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="plateformes.html">
                     <i class="ti-map"></i>                     
-                    <p>Plateformes</p>
+                    <p>Plateformes de publication</p>
                 </a>
             </li>
             <li>
@@ -163,6 +190,7 @@
                                             <th>Product Code Prefix</th>
                                             <th>Nombre de produits</th>
                                             <th>Avertissement dans les derniers 24h</th>
+                                            <th>Options</th>
                                         </thead>
                                         <tbody>
                                                 <tr>
@@ -171,6 +199,9 @@
                                                     <td>lespac</td>
                                                     <td>420</td>
                                                     <td><btn class="btn btn-sm btn-info btn-icon">0</btn></td>
+                                                    <td>
+                                                        <button class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
@@ -178,6 +209,9 @@
                                                     <td>lespacapi</td>
                                                     <td>320</td>
                                                     <td><btn class="btn btn-sm btn-danger btn-icon">4</btn></td>
+                                                    <td>
+                                                        <button class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
@@ -185,6 +219,9 @@
                                                     <td>kijiji</td>
                                                     <td>420</td>
                                                     <td><btn class="btn btn-sm btn-info btn-icon">0</btn></td>
+                                                    <td>
+                                                        <button class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
@@ -192,6 +229,9 @@
                                                     <td>autohebdo</td>
                                                     <td>420</td>
                                                     <td><btn class="btn btn-sm btn-info btn-icon">0</btn></td>
+                                                    <td>
+                                                        <button class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>5</td>
@@ -199,6 +239,9 @@
                                                     <td>facebook</td>
                                                     <td>420</td>
                                                     <td><btn class="btn btn-sm btn-info btn-icon">0</btn></td>
+                                                    <td>
+                                                        <button class="btn-for-now">Modifier<i class="ti-pencil"></i></button>
+                                                    </td>
                                                 </tr>
                                             
                                         </tbody>
@@ -237,7 +280,7 @@
                         </ul>
                     </nav>
                     <div class="copyright pull-right">
-                        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
+                        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="">Mirageflow Inc</a>
                     </div>
                 </div>
             </footer>

@@ -31,6 +31,61 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
 
+    <style>
+       /*  .ct-series-a .ct-area {
+            fill: #68B3C8;
+            stroke: #68B3C8;
+        } */
+
+        .ct-series-a .ct-line {
+            stroke: #68B3C8;
+        }
+        .ct-series-b .ct-line {
+            stroke: #68B3C8;
+        }
+
+        .ct-series-b .ct-area {
+            fill: #F3BB45;
+        }
+
+        #chartActivity .ct-series-a .ct-line{
+            stroke: #F3BB45;
+        }
+        #chartActivity .ct-series-a .ct-point{
+            stroke: #F3BB45;
+        }
+</style>
+
+
+<style>
+        .btn-for-now {
+            border-radius: 3px;
+            background-color: white;
+            float: right;
+            border: 1px solid #68B3C8;
+            margin-right: 2px;
+        }
+
+        .btn-for-now:hover {
+            background-color: #68B3C8;
+            float: right;
+            border: 1px solid #68B3C8
+        }
+
+        .btn-for-now2 {
+            border-radius: 3px;
+            background-color: white;
+            float: right;
+            border: 1px solid #EB5E28;
+            margin-right: 2px;
+        }
+
+        .btn-for-now2:hover {
+            background-color: #EB5E28;
+            float: right;
+            border: 1px solid #EB5E28
+        }
+    </style>
 </head>
 <body>
 
@@ -59,7 +114,7 @@
                 <li>
                     <a href="plateformes.html">
                         <i class="ti-map"></i>                     
-                        <p>Plateformes</p>
+                        <p>Plateformes de publication</p>
                     </a>
                 </li>
                 <li>
@@ -106,7 +161,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="#">Tableau de bord</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -159,7 +214,7 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Nb. Tâches Planifiées</p>
-                                            100
+                                            15
                                         </div>
                                     </div>
                                 </div>
@@ -184,7 +239,7 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Nb. Produits</p>
-                                            2564
+                                            1564
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +264,7 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Erreurs</p>
-                                            3
+                                            1
                                         </div>
                                     </div>
                                 </div>
@@ -234,7 +289,7 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Nb. Plateformes</p>
-                                            8
+                                            5
                                         </div>
                                     </div>
                                 </div>
@@ -261,7 +316,7 @@
                                 <div class="footer">
                                     <div class="chart-legend">
                                         <i class="fa fa-circle text-info"></i> Exécutées
-                                        <i class="fa fa-circle text-danger"></i> À exécuter           
+                                        <i class="fa fa-circle text-warning"></i> À exécuter           
                                     </div>
                                     <hr>
                                     <div class="stats">
@@ -336,7 +391,7 @@
                     </ul>
                 </nav>
                 <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
+                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="">Mirageflow Inc</a>
                 </div>
             </div>
         </footer>
